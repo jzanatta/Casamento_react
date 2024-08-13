@@ -1,0 +1,16 @@
+/* CSS da home */
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--medium-green);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-home {
+    width: 95%;
+    margin: 3%;
+}

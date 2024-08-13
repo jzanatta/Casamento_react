@@ -1,0 +1,23 @@
+:root {
+  font-family: 'PT Serif', monospace;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Defino a cor e no codigo uso "var(--dark-green"); */
+  --dark-green: #254336;
+  --medium-green: #466655;
+  --ligth-green: #B7B597;
+  --grey: #DAD3BE;
+  --white: #fefefe;
+  --soft-white: #f1f1f1;
+  --black: #111;
+  --gold: #FFC100;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,139 @@
+.container2 {
+    margin: 3rem;
+    padding: 3rem;
+    width: 80%;
+    background-color: var(--white);
+    min-height: 250px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    justify-content: left;
+    padding-bottom: 1rem;
+}
+
+.form input,
+textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--grey);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.form textarea {
+    resize: none;
+    height: 8rem;
+}
+
+.form button {
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    height: 35px;
+    background-color: var(--grey);
+    color: var(--black);
+    border-radius: 1%;
+    transition: 0.3s;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+
+.form button:hover {
+    background-color: var(--gold);
+    color: var(--white);
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mapBox {
+    position: relative;
+    margin-top: 1rem;
+    width: 600px;
+    height: 250px;
+    background: var(--white);
+}
+
+.mapBox iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.horaLocal {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.horaLocal p {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.horaLocal p span {
+    color: var(--gold);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 425px) {
+    .mapBox {
+        width: 340px;
+        height: 250px;
+    }
+
+    .horaLocal p {
+        font-size: .7rem;
+    }
+
+    .horaLocal p span {
+        font-size: 1rem;
+    }
+
+    .container2 {
+        margin: 1.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .mapBox {
+        width: 300px;
+        height: 250px;
+    }
+
+    .horaLocal p {
+        font-size: .6rem;
+    }
+
+    .horaLocal p span {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 325px) {
+    .mapBox {
+        width: 250px;
+        height: 250px;
+    }
+
+    .horaLocal p {
+        font-size: .55rem;
+    }
+
+    .form {
+        font-size: .8rem;
+    }
+
+    .container2 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}

@@ -1,0 +1,54 @@
+/* CSS do casal */
+.containerCasal {
+    width: 100%;
+    background-color: var(--medium-green);
+}
+
+.fotos {
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.fotos img {
+    width: 300px;
+    height: 300px;
+    border-radius: 1%;
+    border: 1.5px solid var(--soft-white);
+    object-fit: cover;
+    /* fez a imagem não ficar distorcida */
+    transition: 0.2s;
+}
+
+.fotos img:hover {
+    transform: scale(1.3);
+}
+
+@media (max-width: 425px) {
+    .fotos {
+        padding: 1.5rem;
+        gap: .7rem;
+    }
+
+    .fotos img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .fotos img:hover {
+        transform: scale(1.3);
+    }
+}
+
+@media (max-width: 325px) {
+    .fotos {
+        padding: 1rem;
+        gap: .3rem;
+    }
+
+    .fotos img:hover {
+        transform: scale(1.2);
+    }
+}
